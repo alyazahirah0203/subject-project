@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+    width: 140px;
+    height: auto;
+    padding: 20px 100px;
+    margin-top: -50px;
+    margin-left: -20px;
+    
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+}
+.form-popup .form-box{
+    display: flex;
+}
+
+.form-box .form-details{
+    max-width: 300px;
+    width: 100%;
+    color: white;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #A8A8A8;  /*kalau nak letak gambar, boleh url("img.jpg") */
+    background-size: cover;
+    background-position: center;
+}
+.form-box h2{
+    text-align: center;
+    margin-bottom:  30px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.form-box .form-content{
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+}
+
+form .input-field{
+    height: 50px;
+    width: 85%;
+    margin-top: 10px; /*untuk jarak antara each box*/
+    margin-bottom: 5px;
+    position:relative;
+    margin-left: 16px;
+    
+}
+    form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #717171;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label{
+    color: #cc0000;
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+}
+
+form .input-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 1px solid #717171;
+}
+
+.input-field input:focus{
+    border-color: #cc0000;
+}
+
+.input-field input:is(:focus, :valid){
+    padding: 4px 15px 0;
+}
+form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #717171;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label{
+    color: #cc0000;
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+}
+.form-box a{
+    color: #cc0000;
+    text-decoration: none;
+}
+
+.form-box a:hover{
+    text-decoration: underline;
+}
+
+form button{
+    width: 94%;
+    outline: none;
+    border: none;
+    font-size:  1rem;
+    font-weight:  500;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: #fff;
+    cursor: pointer;
+    background: #cc0000;
+    transform: 0.2s ease;
+}
+form button:hover{
+    background: red;
+}
+
+/*.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+.dropdown *{
+    box-sizing: border-box;
+}*/
+select{
+    background: #2a2f3b;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    height: 50px;
+    width: 93%;
+    margin-bottom: 5px;
+    position:relative;
+    margin-left: 16px;
+    
+
+}
+
+/*
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #6b7588;
+    border: 1px #a6a3ac solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #e3e3e5;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display:none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #2a2d35;
+}
+
+.active{
+    background: #23242a;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}*/
+
+

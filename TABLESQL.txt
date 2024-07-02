@@ -1,0 +1,31 @@
+CREATE TABLE Users(
+    ID int NOT NULL AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    matricID varchar(255),
+    password varchar(255),
+    status varchar(255),
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE students(
+    stdID int NOT NULL AUTO_INCREMENT,
+    stdname varchar(255) NOT NULL,
+    stdphone varchar(255),
+    stdmatric varchar(255),
+    ID int,
+    PRIMARY KEY (stdID),
+    FOREIGN KEY (ID) REFERENCES Users(ID)
+    );
+
+    CREATE TABLE parcels (
+    pID int NOT NULL AUTO_INCREMENT,
+    parcelnum varchar(255),
+    pdate date,
+    courier varchar(255),
+    rack varchar(255),
+    status varchar(255),
+    stdID int,
+    PRIMARY KEY (pID),
+    FOREIGN KEY (stdID) REFERENCES students (stdID)
+    );
+    

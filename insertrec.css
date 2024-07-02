@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: 0 15px 20px #ABB2B9;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: black;
+    padding-bottom: 8px;
+    border-bottom:  1px solid silver;
+}
+
+.content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 0px;
+}
+.input-b{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-b input{
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-box input:is(:focus, :valid){
+    box-shadow:  0 3px 6px rgba (0,0,0,0.2);
+}
+
+
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-box input:is(:focus, :valid){
+    box-shadow:  0 3px 6px rgba (0,0,0,0.2);
+}
+.input-b label{
+    justify-content: end;
+}
+
+.container1{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: 0 15px 20px #ABB2B9;
+}
+
+.content1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input-parcel{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    padding-bottom: 0px;
+}
+
+.input-p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-p input{
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-box input:is(:focus, :valid){
+    box-shadow:  0 3px 6px rgba (0,0,0,0.2);
+}
+
+
+.input-parcel input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-parcel input:is(:focus, :valid){
+    box-shadow:  0 3px 6px rgba (0,0,0,0.2);
+}
+.input-p label{
+    justify-content: end;
+}
+select{
+        height: 40px;
+        width: 95%;
+        padding: 0 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
